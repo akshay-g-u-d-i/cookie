@@ -13,7 +13,8 @@ function App() {
       method: 'GET',
       credentials: 'include',
       headers:{
-        
+        'Access-Control-Allow-Origin': 'https://cookiebyakshay.netlify.app',
+        'Access-Control-Allow-Credentials': true
       }
     });
     const data = await res.json();

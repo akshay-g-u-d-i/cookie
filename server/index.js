@@ -8,7 +8,7 @@ app.use(cors());
 app.get('/', (req, res) => {
 
     // res.header('Access-Control-Allow-Origin', 'https://cookiebyakshay.netlify.app');
-    res.header('Access-Control-Allow-Credentials', true);
+    // res.header('Access-Control-Allow-Credentials', true);
     res.cookie("itupp", "tokenvalue", {
         sameSite: "none",
         secure: true,
