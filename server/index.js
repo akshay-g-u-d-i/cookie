@@ -1,12 +1,18 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const port = process.env.PORT || 5000;
 
-app.get('/', (req,res)=>{
-    res.cookie("jwt","tokenvalue");
-    res.send("What the fuck dude");
+app.use(cors());
+
+app.get('/', (req, res) => {
+
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Credentials', true);
+    res.cookie("efet", "tokenvalue");
+    res.status(200).json("Hello frontend this is backend");
 })
 
-app.listen(port,()=>{
+app.listen(port, () => {
     console.log(`app running on ${port}`)
 })
