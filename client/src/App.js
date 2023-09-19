@@ -11,7 +11,10 @@ function App() {
 
     const res = await fetch(backend, {
       method: 'GET',
-      credentials: 'include'
+      credentials: 'include',
+      headers:{
+        
+      }
     });
     const data = await res.json();
     console.log(data);
