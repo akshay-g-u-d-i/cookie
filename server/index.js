@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
     res.cookie("itupp", "tokenvalue", {
         sameSite: "none",
         secure: true,
-        domain: "https://cookiebyakshay.netlify.app/",
         httpOnly: false
     });
     res.status(200).json("Hello frontend this is backend");
