@@ -1,0 +1,12 @@
+#For client
+
+/client/node_modules
+/client/package-lock.json
+/client/.gitignore
+
+
+
+#For server
+
+/server/node_modules
+/server/package-lock.json
