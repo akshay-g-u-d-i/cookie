@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 
     res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.header('Access-Control-Allow-Credentials', true);
-    res.cookie("fckitupp", "tokenvalue", {
+    res.cookie("itupp", "tokenvalue", {
         sameSite: "none",
         secure: true,
-        domain: "http://localhost:5000",
-        httpOnly: true
+        domain: "http://localhost:3000",
+        httpOnly: false
     });
     res.status(200).json("Hello frontend this is backend");
 })
